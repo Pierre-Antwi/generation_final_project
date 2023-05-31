@@ -1,0 +1,50 @@
+body {
+  font-size: 14px;
+  font-family: 'Sono', sans-serif;
+}
+
+header {
+  text-align: center;
+}
+
+h1 {
+  font-weight: bold;
+  font-size: 48px;
+  color:#f7acc7;
+  
+}
+
+.button * {
+  display: inline-block;
+  width: 151px;
+  height: 49px;
+  padding: 0px 10px;
+  border: none;
+  text-align: center;
+  text-decoration: none;
+  background-color: #444444;
+  color: white;
+  font-size: 16px;
+  font-weight: 600;
+  border-radius: 21px;
+}
+
+.task-creation{
+  display: flex;
+  flex-direction: column;
+  background-color: #cbe8ba;
+  padding: 150px;
+
+}
+
+.task-creation h2{
+  text-align: center;
+  color: white;
+  filter: drop-shadow(#444444);
+}
+
+.container{
+  display:flex;
+  
+}
+
