@@ -26,68 +26,85 @@
       <form>
         <div class="form-group">
           <label for="formGroupExampleInput">Task Name:</label>
-          <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Type task name here...">
+          <input type="text" class="form-control" id="taskNameInput" placeholder="Type task name here...">
+          <div class="alert alert-warning" id='task-Name-alert' role="alert">
+            Yo, you going to far! You can only type 100 character
+          </div>
         </div>
+
         <div class="form-group">
           <label for="formGroupExampleInput2">Task Description:</label>
-          <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="Type description here...">
+          <input type="text" class="form-control" id="taskDescriptionInput" placeholder="Type description here...">
+          <div id='description-alert' class="alert alert-warning"  role="alert">
+           Slow down there, juggernaut! You over the character limit. 500 or less.
+          </div>
         </div>
+
         <div class="form-group">
           <label for="formGroupExampleInput2">Assign To:</label>
-          <input type="text" class="form-control" id="formGroupExampleInput3" placeholder="Type your name here...">
+          <input type="text" class="form-control" id="assign-to-Input" placeholder="Type your name here...">
+          <div class="alert alert-warning" id='assign-To-alert' role="alert">
+            No identity theft here. Use your real name!
+          </div>
         </div>
+
         <div class="form-group col">
           <label for="newTaskDueDate">Due Date</label>
-          <input type="date" class="form-control" id="newTaskDueDate">
+          <input type="date" class="form-control" id="taskDateInput">
+          <div class="alert alert-warning" id='due-Date-alert' role="alert">
+            Your nap was not that long. It's still 2023.
+          </div>
         </div>
+
+        <div class="button" id="addButton">
+          <button class=" btn btn-primary" type="submit">Add Task</button>
+        </div>
+       </div>
+
       </form>
 
-      <div class="button" id="addButton">
-        <button class="btn-primary" type="submit">Add Task</button>
-      </div>
-    </div>
+      <div class ='taskResult'>
+        <h2>Tasks</h2> 
+        <div class="container">
+          <div class="professional">
+            <h3>Professional</h3>
+            <div class="card" style="width: 18rem;">
+              <div class="card-body">
+                <h5 class="task-name">Task Name</h5>
+                <h6 class="assign-to">Assign To:</h6>
+                <p class="task-description">Description here...</p>
+                <h6 class="due-date">Due Date:</h6>
+              </div>
+            </div>
+            <div class="card" style="width: 18rem;">
+              <div class="card-body">
+                <h5 class="task-name">Task Name</h5>
+                <h6 class="assign-to">Assign To:</h6>
+                <p class="card-text">Description here...</p>
+                <h6 class="due-date">Due Date:</h6>
+              </div>
+            </div>
+          </div>
 
-
-    <h2>Tasks</h2>
-    <div class="container">
-      <div class="professional">
-        <h3>Professional</h3>
-        <div class="card" style="width: 18rem;">
-          <div class="card-body">
-            <h5 class="task-name">Task Name</h5>
-            <h6 class="assign-to">Assign To:</h6>
-            <p class="task-description">Description here...</p>
-            <h6 class="due-date">Due Date:</h6>
+          <div class="Personal">
+            <h3>Personal</h3>
+            <div class="card" style="width: 18rem;">
+              <div class="card-body">
+                <h5 class="task-name">Task Name</h5>
+                <h6 class="assign-to">Assign To:</h6>
+                <p class="task-description">Description here...</p>
+                <h6 class="due-date">Due Date:</h6>
+              </div>
+            </div>
+            <div class="card" style="width: 18rem;">
+              <div class="card-body">
+                <h5 class="task-name">Task Name</h5>
+                <h6 class="assign-to">Assign To:</h6>
+                <p class="card-text">Description here...</p>
+                <h6 class="due-date">Due Date:</h6>
+              </div>
+            </div>
           </div>
-        </div>
-        <div class="card" style="width: 18rem;">
-          <div class="card-body">
-            <h5 class="task-name">Task Name</h5>
-            <h6 class="assign-to">Assign To:</h6>
-            <p class="card-text">Description here...</p>
-            <h6 class="due-date">Due Date:</h6>
-          </div>
-        </div>
-      </div>
-
-      <div class="Personal">
-        <h3>Personal</h3>
-        <div class="card" style="width: 18rem;">
-          <div class="card-body">
-            <h5 class="task-name">Task Name</h5>
-            <h6 class="assign-to">Assign To:</h6>
-            <p class="task-description">Description here...</p>
-            <h6 class="due-date">Due Date:</h6>
-          </div>
-        </div>
-        <div class="card" style="width: 18rem;">
-          <div class="card-body">
-            <h5 class="task-name">Task Name</h5>
-            <h6 class="assign-to">Assign To:</h6>
-            <p class="card-text">Description here...</p>
-            <h6 class="due-date">Due Date:</h6>
-          </div>
-        </div>
       </div>
     </div>
   </main>
