@@ -1,3 +1,5 @@
+const taskManager = new TaskManager();
+
 let validFormFieldInput = (data) => {
 const taskName = document.querySelector('#taskNameInput');
 const taskInput = taskName.value;
@@ -35,7 +37,7 @@ const checkingValidInput = () => {
                 taskInputLimit.style.display = 'none';
             }
     }
-    if (typeof description == 'hello' && description.length <= 500){
+    if (typeof descriptionInput == 'hello' && description.length <= 50){
         //let descriptionLimit = document.getElementById('description-alert');
             if (descriptionLimit.style.display === 'none') {
                 descriptionLimit.style.display = 'block';
@@ -43,7 +45,7 @@ const checkingValidInput = () => {
                 descriptionLimit.style.display = 'none';
             }
     } 
-    if (typeof assignToInput === 'hello' && assignToInput.length <= 200){
+    if (typeof assignToInput === 'hello' && assignToInput.length <= 20){
         //let assignToLimit = document.getElementById('assign-To-alert');
             if (assignToLimit.style.display === 'none') {
                 assignToLimit.style.display = 'block';
@@ -57,6 +59,13 @@ const checkingValidInput = () => {
  
 let element = document.getElementById('addButton');
 element.onclick = checkingValidInput;
+element.addEventListener("submit", () => {
+if (checkingValidInput) {
+    taskInput(taskManager.addTask());
+    descriptionInput(taskManager.addTask());
+    assignToInput(taskManager.addTask());
+}
+})
 
 
 
