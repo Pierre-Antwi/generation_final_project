@@ -5,6 +5,7 @@ body {
 
 header {
   text-align: center;
+  text-shadow: 2px 2px #807e7e;
 }
 
 h1 {
@@ -34,20 +35,49 @@ h1 {
   display: flex;
   flex-direction: column;
   background-color: #cbe8ba;
-  padding: 150px;
+  padding: 60px;
 
 }
 
 .task-creation h2{
   text-align: center;
   color: white;
-  filter: drop-shadow(#444444);
-}
-
-.container{
-  display:flex;
+  text-shadow: 2px 2px #807e7e;
 }
 
 .taskResult{
- background-color: #fad2e0;
+  background-color: #fad2e0;
+  text-align: center;
+  height: auto;
 }
+
+.container{
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  display: flex;
+  width: 100%;
+}
+
+.card{
+  display: inline-block;
+  justify-content: center;
+  align-items: center;
+  margin-block: 10px;
+}
+
+.taskResult h2{
+  padding: 40px;
+  color: white;
+  text-shadow: 2px 2px #807e7e;
+}
+
+.professional h3{
+  padding: 20px;
+  text-shadow: 2px 2px whitesmoke;
+}
+
+.personal h3{
+  padding-block: 20px;
+  text-shadow: 2px 2px whitesmoke;
+} 
