@@ -1,4 +1,7 @@
 const taskManager = new TaskManager();
+console.log(taskManager.tasks);
+taskManager.tasks.push('Take out the trash','Take out the trash to the front of the house', 'Nick','2020-09-20','TODO');
+console.log(taskManager.addTask());
 
 let validFormFieldInput = (data) => {
 const taskName = document.querySelector('#taskNameInput');
@@ -59,13 +62,13 @@ const checkingValidInput = () => {
  
 let element = document.getElementById('addButton');
 element.onclick = checkingValidInput;
-element.addEventListener("submit", () => {
-if (checkingValidInput) {
-    taskInput(taskManager.addTask());
-    descriptionInput(taskManager.addTask());
-    assignToInput(taskManager.addTask());
-}
-})
+// element.addEventListener("submit", () => {
+// if (checkingValidInput) {
+//     taskInput(taskManager.addTask());
+//     descriptionInput(taskManager.addTask());
+//     assignToInput(taskManager.addTask());
+// }
+// })
 
 
 
