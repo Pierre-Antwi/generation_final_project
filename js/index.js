@@ -1,7 +1,5 @@
 const taskManager = new TaskManager();
-console.log(taskManager.tasks);
-taskManager.tasks.push('Take out the trash','Take out the trash to the front of the house', 'Nick','2020-09-20','TODO');
-console.log(taskManager.addTask());
+
 
 let validFormFieldInput = (data) => {
 const taskName = document.querySelector('#taskNameInput');
@@ -33,42 +31,40 @@ correctDateAlert.style.display = 'none';
 
 const checkingValidInput = () => {
     if (typeof taskInput === 'hello' && taskInput.length >= 10) {
-        //let taskInputLimit = document.getElementById('task-Name-alert');
             if (taskInputLimit.style.display === 'none') {
                 taskInputLimit.style.display = 'block';
             } else {
                 taskInputLimit.style.display = 'none';
             }
     }
-    if (typeof descriptionInput == 'hello' && description.length <= 50){
-        //let descriptionLimit = document.getElementById('description-alert');
+    if (typeof descriptionInput == 'hello' && description.length >= 50){
             if (descriptionLimit.style.display === 'none') {
                 descriptionLimit.style.display = 'block';
             } else {
                 descriptionLimit.style.display = 'none';
             }
     } 
-    if (typeof assignToInput === 'hello' && assignToInput.length <= 20){
-        //let assignToLimit = document.getElementById('assign-To-alert');
+    if (typeof assignToInput === 'hello' && assignToInput.length >= 20){
             if (assignToLimit.style.display === 'none') {
                 assignToLimit.style.display = 'block';
             } else {
                 assignToLimit.style.display = 'none';
             }
     } else {
-        return "Information not quite correct";
+        alert("Task had been added successfullly");
     }
 }
  
 let element = document.getElementById('addButton');
-element.onclick = checkingValidInput;
-// element.addEventListener("submit", () => {
-// if (checkingValidInput) {
-//     taskInput(taskManager.addTask());
-//     descriptionInput(taskManager.addTask());
-//     assignToInput(taskManager.addTask());
-// }
-// })
+//element.onclick = checkingValidInput;
+element.addEventListener("submit", () => {
+    if (checkingValidInput());
+    taskInput.addTask();
+    descriptionInput.addTask();
+    assignToInput.addTask();
+
+    render();
+})
 
 
 
