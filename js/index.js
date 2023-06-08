@@ -9,13 +9,13 @@ formField.addEventListener('submit', (e)=> {
     const dueDate = document.querySelector('#taskDateInput');
 
     if(taskName.value === '') {
-        alert('Please enter a task name')
+        alert('Yo, you are going too far! Do not forget to type your task here!')
     } else if (taskDescription.value === '') {
-        alert('Please enter a task description')
-    } else if(taskAssign.value === '') {
-        alert('Please enter a task assigned to')
+        alert('Slow down there, juggernaut! You need to add a description or we will not know what is going on.')
+    }  else if(taskAssign.value === '') {
+        alert('No identity theft here. Use your real name!')  
     } else if (dueDate.value === '') {
-        alert('Please enter a due date')
+        alert('Your nap was not that long. It is still 2023.')
     } 
 
     const taskInput = taskName.value;

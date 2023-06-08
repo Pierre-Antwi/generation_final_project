@@ -4,11 +4,11 @@ const createTaskHtml = (name, description, assignTo, dueDate, status) =>{
     <li>
       <div class="card" style="width: 25rem; height: 15rem">
       <div class="card-body">
-        <h5 class="task-name"><strong>Task Name : </strong> ${name}</h5><br>
-        <p class="task-description"><strong>Description : </strong> ${description} </p><br>
-        <h6 class="assign-to"><strong>Assigned To:</strong> ${assignTo}</h6><br>
-        <h6 class="due-date"><strong> Due Date : </strong> ${dueDate} </h6>
-        <h6 class="status><strong> Status : </strong> ${status}</h6>
+        <h5 class="task-name"><strong>Task Name: </strong>${name}</h5>
+        <p class="task-description"><strong>Description: </strong>${description}</p><br>
+        <h6 class="assign-to"><strong>Assigned To: </strong>${assignTo}</h6><br>
+        <h6 class="due-date"><strong>Due Date: </strong>${dueDate}</h6>
+        <h6 class="status"><strong>Status: </strong>${status}</h6>
       </div>
       </div>
     </li>`
