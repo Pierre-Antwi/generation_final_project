@@ -1,19 +1,17 @@
 const createTaskHtml = (name, description, assignTo, dueDate, status) =>{
-  const html = 
-     `
-    <li>
+  const html =   
+  `
       <div class="card" style="width: 25rem; height: 15rem">
       <div class="card-body">
-        <h5 class="task-name"><strong>Task Name: </strong>${name}</h5>
-        <p class="task-description"><strong>Description: </strong>${description}</p><br>
-        <h6 class="assign-to"><strong>Assigned To: </strong>${assignTo}</h6><br>
-        <h6 class="due-date"><strong>Due Date: </strong>${dueDate}</h6>
-        <h6 class="status"><strong>Status: </strong>${status}</h6>
+        <h5 class="task-name"><strong>Task Name : </strong> ${name}</h5><br>
+        <p class="task-description"><strong>Description : </strong> ${description} </p><br>
+        <h6 class="assign-to"><strong>Assigned To:</strong> ${assignTo}</h6><br>
+        <h6 class="due-date"><strong> Due Date : </strong> ${dueDate} </h6>
+        <h6 class="status"><strong> Status : </strong> ${status}</h6>
       </div>
       </div>
-    </li>`
-
-  return html;
+  `
+return html
 }
 
 class TaskManager  {
@@ -21,14 +19,14 @@ class TaskManager  {
         this.currentId = currentId;
         this.tasks = [];
     }
-    addTask (taskInput, descriptionInput, assignToInput, dueDateInput) {
+    addTask (taskInput, descriptionInput, assignToInput, dueDateInput, status) {
        const task =  {
         id : this.currentId++,
         name : taskInput,
         description : descriptionInput,
         assignedTo : assignToInput,
         dueDate : dueDateInput,
-        status : 'TODO'
+        status : 'TO-DO'
         }
         this.tasks.push(task);
         console.log(task);
@@ -40,7 +38,7 @@ class TaskManager  {
           const task = this.tasks[i];
           let date = new Date(task.dueDate);
           let formattedDate = date.toString;
-          let taskHtml = createTaskHtml(task.name, task.description, task.assignedTo, task.dueDate, this.status);
+          let taskHtml = createTaskHtml(task.name, task.description, task.assignedTo, task.dueDate, task.status);
           taskHtmlList.push(taskHtml);
         }
        let tasksHtml = taskHtmlList.join();
