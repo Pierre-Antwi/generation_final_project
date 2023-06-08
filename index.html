@@ -23,9 +23,9 @@
   <main>
     <div class="task-creation">
       <h2>Add New Task</h2>
-      <form>
+      <form id="formField">
         <div class="form-group">
-          <label for="formGroupExampleInput">Task Name:</label>
+          <label for="formField">Task Name:</label>
           <input type="text" class="form-control" id="taskNameInput" placeholder="Type task name here...">
           <div class="alert alert-warning" id='task-Name-alert' role="alert">
             Yo, you going to far! You can only type 100 character
@@ -33,7 +33,7 @@
         </div>
 
         <div class="form-group">
-          <label for="formGroupExampleInput2">Task Description:</label>
+          <label for="formField">Task Description:</label>
           <input type="text" class="form-control" id="taskDescriptionInput" placeholder="Type description here...">
           <div id='description-alert' class="alert alert-warning"  role="alert">
            Slow down there, juggernaut! You over the character limit. 500 or less.
@@ -41,7 +41,7 @@
         </div>
 
         <div class="form-group">
-          <label for="formGroupExampleInput2">Assign To:</label>
+          <label for="formField">Assign To:</label>
           <input type="text" class="form-control" id="assign-to-Input" placeholder="Type your name here...">
           <div class="alert alert-warning" id='assign-To-alert' role="alert">
             No identity theft here. Use your real name!
@@ -49,7 +49,7 @@
         </div>
 
         <div class="form-group col">
-          <label for="newTaskDueDate">Due Date</label>
+          <label for="formField">Due Date</label>
           <input type="date" class="form-control" id="taskDateInput">
           <div class="alert alert-warning" id='due-Date-alert' role="alert">
             Your nap was not that long. It's still 2023.
@@ -71,10 +71,6 @@
 
             <div class="card" style="width: 25rem; height: 15rem">
               <div class="card-body" id = 'Pro1'>
-                <h5 class="task-name"><strong>Task Name : </strong> Apply to job applications</h5><br>
-                <h6 class="assign-to"><strong>Assigned To:</strong> Siedah Mcalpine</h6><br>
-                <p class="task-description"><strong>Description : </strong> Use job searching platforms to seek employment </p><br>
-                <h6 class="due-date"><strong> Due Date : </strong> 06-13-2023 </h6>
               </div>
             </div>
 
