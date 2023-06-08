@@ -27,33 +27,21 @@
         <div class="form-group">
           <label for="formField">Task Name:</label>
           <input type="text" class="form-control" id="taskNameInput" placeholder="Type task name here...">
-          <div class="alert alert-warning" id='task-Name-alert' role="alert">
-            Yo, you going to far! You can only type 100 character
-          </div>
         </div>
 
         <div class="form-group">
           <label for="formField">Task Description:</label>
           <input type="text" class="form-control" id="taskDescriptionInput" placeholder="Type description here...">
-          <div id='description-alert' class="alert alert-warning"  role="alert">
-           Slow down there, juggernaut! You over the character limit. 500 or less.
-          </div>
         </div>
 
         <div class="form-group">
           <label for="formField">Assign To:</label>
           <input type="text" class="form-control" id="assign-to-Input" placeholder="Type your name here...">
-          <div class="alert alert-warning" id='assign-To-alert' role="alert">
-            No identity theft here. Use your real name!
-          </div>
         </div>
 
         <div class="form-group col">
           <label for="formField">Due Date</label>
           <input type="date" class="form-control" id="taskDateInput">
-          <div class="alert alert-warning" id='due-Date-alert' role="alert">
-            Your nap was not that long. It's still 2023.
-          </div>
         </div>
 
         <div class="button" id="addButton">
@@ -66,82 +54,49 @@
       <div class ='taskResult'>
         <h2>Tasks</h2> 
         <div class="container">
-          <div class="professional">
-            <h3>Professional</h3>
-
-            <div class="card" style="width: 25rem; height: 15rem">
-              <div class="card-body" id = 'Pro1'>
+          <ul class="list-group">
+            <li class="card" style="width: 25rem; height: 15rem">
+              <div class="card-body" id="Pro1">
               </div>
-            </div>
-
-            <div class="card" style="width: 25rem; height: 15rem">
+            </li>
+            <li class="card" style="width: 25rem; height: 15rem">
               <div class="card-body" id="Pro2">
-                <h5 class="task-name"><strong>Task Name : </strong> Complete LinkedIN profile</h5><br>
+                <h5 class="task-name"><strong>Task Name : </strong> Complete LinkedIn profile</h5>
                 <h6 class="assign-to"><strong>Assign To:</strong> Pierre Antwi</h6><br>
-                <p class="card-text"><strong>Description : </strong> Upload your picture and fill out needed spaces</p><br>
-                <h6 class="due-date"><strong>Due Date : </strong> 07-06-2023</h6>
+                <p class="card-text"><strong>Description: </strong> Upload your picture and fill out needed spaces</p>
+                <h6 class="due-date"><strong>Due Date: </strong> 07-06-2023</h6>
+                <h6 class="status"><strong>Status: </strong> Done</h6>
               </div>
-            </div>
-
-            <div class="card" style="width: 25rem; height: 15rem">
+            </li>
+            <li class="card" style="width: 25rem; height: 15rem">
               <div class="card-body" id="Pro3">
-                <h5 class="task-name"><strong>Task Name : </strong> Learn new skill</h5><br>
+                <h5 class="task-name"><strong>Task Name : </strong> Learn new skill</h5>
                 <h6 class="assign-to"><strong>Assign To:</strong> Siedah Mcalpine</h6><br>
-                <p class="card-text"><strong>Description : </strong> Learn another programming language to better my skillset</p><br>
+                <p class="card-text"><strong>Description : </strong> Learn another programming language to better my
+                  skillset</p>
                 <h6 class="due-date"><strong>Due Date : </strong> 07-06-2024</h6>
+                <h6 class="status"><strong>Status: </strong> Done</h6>
               </div>
-            </div>  
-            
-          
-            <div class="card" style="width: 25rem; height: 15rem">
+            </li>
+            <li class="card" style="width: 25rem; height: 15rem">
               <div class="card-body" id="Pro4">
-                <h5 class="task-name"><strong>Task Name : </strong></h5><br>
-                <h6 class="assign-to"><strong>Assign To:</strong></h6><br>
-                <p class="card-text"><strong>Description : </strong></p><br>
-                <h6 class="due-date"><strong>Due Date : </strong></h6>
-              </div>
-            </div>  
-          </div>
-
-          <div class="personal">
-            <h3>Personal</h3>
-
-            <div class="card" style="width: 25rem; height: 15rem">
-              <div class="card-body" id="Per1">
-                <h5 class="task-name"><strong>Task Name : </strong> Get Healthy</h5><br>
-                <h6 class="assign-to"><strong>Assign To : </strong> Siedah Mcalpine</h6><br>
-                <p class="task-description"><strong>Description : </strong> Exercise more and eat healthy</p><br>
-                <h6 class="due-date"><strong>Due Date: </strong> 08-30-2023</h6>
-              </div>
-            </div>
-
-            <div class="card" style="width: 25rem; height: 15rem">
-              <div class="card-body" id="Per2">
-                <h5 class="task-name"><strong>Task Name : </strong> Get Driver's license</h5><br>
-                <h6 class="assign-to"><strong>Assign To :</strong> Pierre Antwi</h6><br>
-                <p class="card-text"><strong>Description : </strong> Study the driver's license manual, pass the written and practical test</p><br>
-                <h6 class="due-date"><strong>Due Date :</strong> 07-30-2023</h6>
-              </div>
-            </div>
-
-            <div class="card" style="width: 25rem; height: 15rem">
-              <div class="card-body" id="Per3">
-                <h5 class="task-name"><strong>Task Name : </strong> Master a Discipline</h5><br>
+                <h5 class="task-name"><strong>Task Name : </strong> Master a Discipline</h5>
                 <h6 class="assign-to"><strong>Assign To:</strong> Pierre Antwi</h6><br>
                 <p class="card-text"><strong>Description : </strong> Learn how to box or practive jujutsu</p><br>
                 <h6 class="due-date"><strong>Due Date : </strong> 07-06-2024</h6>
+                <h6 class="status"><strong>Status: </strong> Done</h6>
               </div>
-            </div>
-
-            <div class="card" style="width: 25rem; height: 15rem">
-              <div class="card-body" id="Per4">
-                <h5 class="task-name"><strong>Task Name : </strong></h5><br>
-                <h6 class="assign-to"><strong>Assign To:</strong></h6><br>
-                <p class="card-text"><strong>Description : </strong></p><br>
-                <h6 class="due-date"><strong>Due Date : </strong></h6>
+            </li>
+            <li class="card" style="width: 25rem; height: 15rem">
+              <div class="card-body" id="Pro5">
+                <h5 class="task-name"><strong>Task Name : </strong> Get Healthy</h5>
+                <h6 class="assign-to"><strong>Assign To:</strong> Siedah Mcalpine</h6><br>
+                <p class="card-text"><strong>Description : </strong> Exercise more and eat healthy</p>
+                <h6 class="due-date"><strong>Due Date : </strong> 08-30-2023</h6>
+                <h6 class="status"><strong>Status: </strong> Done</h6>
               </div>
-            </div>
-          </div>
+            </li>
+          </ul>
         </div>
       </div>
   </main>
