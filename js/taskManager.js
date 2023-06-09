@@ -8,8 +8,8 @@ const createTaskHtml = (id, name, description, assignTo, dueDate, status) => {
         <h6 class="assign-to"><strong>Assigned To:</strong> ${assignTo}</h6>
         <h6 class="due-date"><strong> Due Date : </strong> ${dueDate} </h6>
         <h6 class="status"><strong> Status : </strong> ${status}
-        <span class="btn btn-primary done-button" data-task-id=${id} >Mark as Done<span></h6>
-        <button type="button" class="btn btn-dark delete-button">Delete</button>
+        <span class="btn btn-secondary btn-sm done-button" data-task-id=${id} >Mark as Done<span></h6>
+        <button type="button" class="btn btn-dark btn-sm delete-button">Delete</button>
       </div>
     </div>
   `
